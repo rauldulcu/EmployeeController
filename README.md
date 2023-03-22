@@ -8,8 +8,11 @@ Now, we can either choose the 'Manager' type account:
 ![image](https://user-images.githubusercontent.com/99651712/226878124-1cfbeb4d-35ce-4939-8739-5589f78c1126.png)
 
 In which we can:
+
 -see all the employees and their info
+
 -select an employee and update their salary, add bonuses to their total salary or remove them 
+
 -add other employees
 
 ![image](https://user-images.githubusercontent.com/99651712/226878381-414f9bde-9fb0-4880-b169-f6438f1f6531.png)
@@ -21,7 +24,9 @@ In which we can:
 ![image](https://user-images.githubusercontent.com/99651712/226878557-c97baa89-9579-44ea-a983-a3501892ee60.png)
 
 If we choose the 'Employee' type account, we can:
+
 -see our info
+
 -pay taxes
 
 ![image](https://user-images.githubusercontent.com/99651712/226879224-e7560220-e37a-41df-9fa0-cecf71e5eb4e.png)
