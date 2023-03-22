@@ -495,7 +495,7 @@ public class EmployeeControllerJFrame extends javax.swing.JFrame {
                 ManagerPanel.setVisible(true);
                 ChoosingPhasePanel.setVisible(false);
             } else {
-                JOptionPane.showMessageDialog(this, "Incorrect pasword. Please try again.", " ", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Incorrect password. Please try again.", " ", JOptionPane.ERROR_MESSAGE);
             }
         } catch (NullPointerException ex) {
         }
@@ -541,18 +541,18 @@ public class EmployeeControllerJFrame extends javax.swing.JFrame {
             this.MonthlySalaryField.setText(employee.getSalaryInfo().getMonthlyRevenue() + "");
         } catch (NullPointerException ex) {
         } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(this, "You can introduce only numbers in this field.", " ", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "You can only introduce numbers in this field.", " ", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_UpdateSalaryButtonMouseClicked
 
     private void AddBonusButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddBonusButtonMouseClicked
         try {
-            Double bonus = Double.parseDouble(JOptionPane.showInputDialog(this, "Please introduce the amount of many you want to add as a bonus:"));
+            Double bonus = Double.parseDouble(JOptionPane.showInputDialog(this, "Please introduce the amount of money you want to add as a bonus:"));
             employee.addMoney(bonus);
             this.TotalSalaryField.setText(employee.getSalaryInfo().getTotalRevenue() + "");
         } catch (NullPointerException ex) {
         } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(this, "You can introduce only numbers in this field.", " ", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "You can only introduce numbers in this field.", " ", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_AddBonusButtonMouseClicked
 
@@ -562,7 +562,7 @@ public class EmployeeControllerJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_AddSalaryButtonMouseClicked
 
     private void RemoveEmployeeButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RemoveEmployeeButtonMouseClicked
-        int option = JOptionPane.showConfirmDialog(this, "Are you sure yo want to remove this employee?", " ", JOptionPane.YES_NO_OPTION);
+        int option = JOptionPane.showConfirmDialog(this, "Are you sure you want to remove this employee?", " ", JOptionPane.YES_NO_OPTION);
         if (option == 0) {
             controller.getEmployees().remove(employee);
             JOptionPane.showMessageDialog(this, "Employee removed.");
@@ -617,7 +617,7 @@ public class EmployeeControllerJFrame extends javax.swing.JFrame {
         } catch (NegativeAmountException | NegativeBalanceException ex) {
             JOptionPane.showMessageDialog(this, ex.toString(), " ", JOptionPane.ERROR_MESSAGE);
         } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(this, "You can introduce only numbers. ", " ", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "You can only introduce numbers. ", " ", JOptionPane.ERROR_MESSAGE);
         } catch (Exception ex) {
 
         }

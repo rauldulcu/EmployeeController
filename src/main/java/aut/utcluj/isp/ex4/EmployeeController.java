@@ -33,7 +33,7 @@ public class EmployeeController extends AbstractTableModel {
             }
         }
 
-        System.out.println("There is no employee with this cnp");
+        System.out.println("There is no employee with this CNP");
         return null;
     }
 
